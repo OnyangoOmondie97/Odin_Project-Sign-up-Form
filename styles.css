@@ -1,31 +1,22 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-section h1 {
-    font-family: 'Norse Bold', sans-serif; /* Use your selected font here */
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -38,26 +29,98 @@ nav ul li a {
     text-decoration: none;
 }
 
-.main-section {
+/* Main styles */
+main {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background section styles */
+.background-section {
+    width: 40%; /* 40% width for the background section */
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
 }
 
 .background-image {
-    background-image: url('background-image.jpg'); /* Replace with your background image */
     background-size: cover;
-    width: 60%;
-    height: 400px;
 }
 
-.content {
-    width: 30%;
+.logo-section {
+    text-align: center;
 }
 
-.sidebar {
-    width: 20%;
+.logo-section img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.logo-section h1 {
+    font-family: 'Norse', sans-serif; /* Use the Norse font */
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Other sections styles */
+.content-section,
+.form-section,
+.account-section {
+    width: 60%; /* 60% width for the other three sections */
+    height: 100%;
+    padding: 20px;
+}
+
+/* Form section styles */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-6 {
+    width: 48%; /* Adjust to accommodate margins and ensure proper spacing */
+    margin-right: 2%; /* Adjust to accommodate margins */
+    float: left;
+}
+
+.col-6:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Account section styles */
+.account-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .create-account-btn {
@@ -67,22 +130,7 @@ nav ul li a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.form input {
-    width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #E5E7EB;
-}
-
-.form input.error {
-    border-color: red;
-}
-
-.form input:focus {
-    border-color: blue;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
 }
 
 footer {
