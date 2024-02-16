@@ -1,9 +1,13 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-size: larger;
+    background-color: black;
     margin: 0;
-    padding: 0;
+    padding: 2px;
+    height: 100vh;
+    width: 70%;
+    padding-left: 10%;
 }
 
 /* Header styles */
@@ -11,6 +15,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    width: 100%;
 }
 
 nav ul {
@@ -24,6 +29,10 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li:first-child {
+    margin-right: auto; 
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -32,35 +41,53 @@ nav ul li a {
 /* Main styles */
 main {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
+    padding: 5px;
 }
 
 /* Background section styles */
 .background-section {
-    width: 40%; /* 40% width for the background section */
+    width: 100%;
     height: 100%;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
 }
 
 .background-image {
+    width: 100%; 
+    height: 100%; 
     background-size: cover;
+    background-position: center;
 }
 
 .logo-section {
-    text-align: center;
+    display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(10, 8, 8, 0.7); 
+        padding: 20px;
+        border-radius: 8px;
+        color: #fff;
+        width: AUTO;
+        margin: 0 auto; 
 }
 
 .logo-section img {
-    width: 100px; /* Adjust as needed */
+    width: 100px;
     height: auto;
+    max-width: 50%; 
+    margin-left: 5px;
 }
 
 .logo-section h1 {
-    font-family: 'Norse', sans-serif; /* Use the Norse font */
+    font-family: 'Norse', sans-serif;
     font-size: 24px;
     margin-top: 10px;
 }
@@ -69,10 +96,12 @@ main {
 .content-section,
 .form-section,
 .account-section {
-    width: 60%; /* 60% width for the other three sections */
-    height: 100%;
-    padding: 20px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
 }
+
 
 /* Form section styles */
 fieldset {
@@ -87,13 +116,16 @@ legend {
 }
 
 .row {
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px; 
+    width: 100%;
 }
 
 .col-6 {
-    width: 48%; /* Adjust to accommodate margins and ensure proper spacing */
-    margin-right: 2%; /* Adjust to accommodate margins */
-    float: left;
+    flex: 0 0 50%; 
+    width: 50%;
+    margin:0;
 }
 
 .col-6:last-child {
@@ -117,12 +149,6 @@ input[type="password"] {
 }
 
 /* Account section styles */
-.account-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .create-account-btn {
     background-color: #596D48;
     color: #fff;
@@ -130,7 +156,6 @@ input[type="password"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 footer {
@@ -138,4 +163,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    width:100%;
 }

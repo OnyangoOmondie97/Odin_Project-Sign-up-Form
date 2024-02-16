@@ -19,74 +19,89 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section class="background-section">
-            <div class="background-image" style="background-image: url('background-image.jpg')">
-                <div class="logo-section">
-                    <img src="odin-logo.png" alt="ODIN Logo">
-                    <h1>ODIN</h1>
-                </div>
+        <!-- Row -->
+        <div class="row">
+            <div class="col-6">
+                <section id="background-section" class="background-section" style="background-color:azure">
+
+                    <div class="background-image" style="background-image: url('background-image.jpg')">
+                        <!-- Background section content -->
+                        <div class="logo-section" style="display: flex; align-items: center; justify-content: center; background-color: rgba(17, 15, 15, 0.7); padding: 20px; border-radius: 8px; max-width: 200px; margin: 0 auto;">
+                            <img src="odin-logo.png" alt="ODIN Logo" style="max-width: 50%; margin-right: 10px;">
+                            <h1 style="margin: 0;">ODIN</h1>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <section class="content-section">
-            <div class="content">
-                <h2>Welcome to ODIN Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </section>
 
-        <section class="form-section">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <div class="form">
-                    <h2>Sign Up</h2>
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
-                        </div>
-                        <div class="col-6">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name">
-                        </div>
+            <div class="col-6">
+                <section class="content-section" style="background-color:azure">
+                    <!-- Content section content -->
+                    <div class="content">
+                        <h2>Welcome to the ODIN Project!</h2>
+                        <p>Discover boundless creativity and innovation with us. Join our community of developers and designers. Explore tutorials, discussions, and more. From web development to AI, we're redefining possibilities. Unleash your potential and embark on an adventure with us. Welcome to the ODIN Project!</p>
                     </div>
+                </section>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
-                        </div>
-                        <div class="col-6">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
-                        </div>
-                    </div>
+                <section class="form-section" style="background-color:whitesmoke">
+                    <!-- Form section content -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="form">
+                            <h2>Sign Up</h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
+                                </div>
+                                <div class="col-6">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name">
+                                </div>
+                            </div>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-                        </div>
-                        <div class="col-6">
-                            <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-        </section>
-
-        <section class="account-section">
-            <button class="create-account-btn">Create Account</button>
-            <p>Already have an account? <a href="#">Login</a></p>
-        </section>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                                </div>
+                                <div class="col-6">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+                                </div>
+                            </div>
         
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                                </div>
+                                <div class="col-6">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <div class="col-12">
+                    <section class="account-section" style="background-color:azure">
+                        <!-- Account section content -->
+                        <button class="create-account-btn">Create Account</button>
+                        <p>Already have an account? <a href="#">Login</a></p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
+    
+    
+   
 
-
-        
     <footer>
         <p>&copy; 2024 <a href="https://onyangoomondie97.github.io/Personal-Portfolio/">Keith's.</a> All rights reserved.</p>
     </footer>
